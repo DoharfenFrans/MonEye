@@ -1,0 +1,323 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>MONEYE</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{{url_for('static',filename= 'css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename= 'css/bootstrap-theme.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename= 'css/animate.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename= 'css/easy-responsive-tabs.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename= 'css/tabs.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename= 'css/templatemo-style.css')}}">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="{{url_for('static',filename= 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')}}"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Laoding page  -->
+    <div class="preloader">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <!-- End Laoding page  -->
+
+    <!-- Begin HorizontalTab style 6 -->
+    <section class="section-full image-bg">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12">
+
+            <a href="index.html"><div class="responsive-logo hidden-lg hidden-md hidden-sm"><img src="{{url_for('static',filename= 'img/logo2.png')}}"></div></a>
+            
+            <!-- Begin .HorizontalTab -->
+            <div class="VerticalTab VerticalTab_hash_scroll VerticalTab_6 tabs_ver_6">
+              <ul class="resp-tabs-list hor_1">
+                <a href="{{ url_for('index') }}"><div class="logo"><img src="{{url_for('static',filename= 'img/logo2.png')}}" width="130" height="120"></div></a>
+                <li class="tabs-1" data-tab-name="beranda" onclick="stop()"><span class="tabs-text" > Beranda </span></li>
+                  <li class="tabs-2" data-tab-name="mulai" onclick="start()"><span class="tabs-text" > Mulai </span></li>
+                  <li class="tabs-3" data-tab-name="tentang" onclick="stop()"><span class="tabs-text" > Tentang </span></li>             
+                  <li class="tabs-4" data-tab-name="panduan" onclick="stop()"><span class="tabs-text" > Panduan </span></li>
+                </ul>
+            </form>
+                
+              <div class="resp-tabs-container hor_1 tabs_scroll">                
+                <div class="fc-tab-1">                  
+                  <div class="about-container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2>Hidup lebih mudah bersama <em>MONEYE</em></h2>
+                        <div class="under-line"></div>
+                        <p>MONEYE (Money Eye) adalah aplikasi berbasis web yang mampu mendeteksi uang kertas Indonesia (Rupiah).</p>
+                        <img src="{{url_for('static',filename= 'img/about-image.jpg')}}">
+                      </div>
+                    </div>
+                  </div>                
+                </div>
+                
+                <div class="fc-tab-2">
+                  <div class="home-container">
+                    <!-- <img id="bg" src="{{ url_for('video_feed') }}"> -->
+                    <img class="video-img" id="bg" src="{{url_for('static',filename= 'img/prepcam.jpg')}}">
+                    <!-- <img id="bg" src="{{ video }}"> -->
+                  </div>  
+                  <button type="button" class="btn-sound" aria-label="Left Align" onclick="playsound()">
+                    <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                  </button>
+                  
+                </div>
+                
+                <div class="fc-tab-3">
+
+                  <div class="owl-carousel owl-theme projects-container">
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Rupiah Recognition</h4>
+                              <a href="{{url_for('static',filename= 'img/1.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/1.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Multi Object Detection</h4>
+                              <a href="{{url_for('static',filename= 'img/2.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/2.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>MONEY COUNTER</h4>
+                              <a href="{{url_for('static',filename= 'img/3.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/3.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>BINUS UNIVERSITY</h4>
+                              <a href="{{url_for('static',filename= 'img/4.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/4.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Doharfen Frans</h4>
+                              <a href="{{url_for('static',filename= 'img/5.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/5.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Ryan Reeves</h4>
+                              <a href="{{url_for('static',filename= 'img/6.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/6.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Stephanie</h4>
+                              <a href="{{url_for('static',filename= 'img/7.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/7.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>Vicensia Charitas</h4>
+                              <a href="{{url_for('static',filename= 'img/8.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/8.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project-item">
+                        <div class="thumb-holder">
+                          <div class="hover-effect">
+                            <div class="hover-content">
+                              <h4>PPTI BCA 11</h4>
+                              <a href="{{url_for('static',filename= 'img/item-9.jpg')}}" data-lightbox="image-1"><img src="{{url_for('static',filename= 'img/project-icon.png')}}"></a>
+                            </div>
+                          </div>
+                          <img src="{{url_for('static',filename= 'img/9.jpg')}}">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="fc-tab-4">
+                  <div class="contact-container">
+                    <div class="row">
+                        <div class="heading">
+                          <h2>MonEye</h2>
+                        </div>
+                        <div class="more-info">
+                          <p>
+                            <b><u> Cara Menggunakan Aplikasi</u></b>
+                            <br><br>
+                            1. Tekan tombol mulai pada halaman utama untuk mendeteksi uang <br>
+                            2. Perlihatkan uang ke kamera <br>
+                            3. Jika uang sudah terdeteksi, informasi total uang akan terlihat <br>
+                            4. Tekan 's' untuk memutar audio deteksi uang <br><br>
+                            <b><i>
+                            Aplikasi ini dibuat oleh <br>
+                            KELOMPOK 7 <br>
+                            PPTI 11 - BINUS UNIVERSITY
+                            </i></b>
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                
+              </div>
+            </div>
+            <!-- End .HorizontalTab -->
+          
+          </div>
+          
+        </div>
+        
+      </div>
+
+    </section>
+    <!-- End HorizontalTab style 6 -->
+    
+
+      <footer>
+        <p>Copyright &copy; 2022 MONEYE
+                                
+        
+      </footer>
+    </div> <!-- /container -->        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="{{url_for('static',filename= 'js/vendor/bootstrap.min.js')}}"></script>
+        <script src="{{url_for('static',filename= 'js/plugins.js')}}"></script>
+        <script src="{{url_for('static',filename= 'js/main.js')}}"></script>
+        <script src="{{url_for('static',filename= 'js/jquery.nicescroll.min.js')}}"></script>
+        <script src="{{url_for('static',filename= 'js/easyResponsiveTabs.js')}}"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script >
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            
+            // function doesFileExist(urlToFile) {
+            //     var xhr = new XMLHttpRequest();
+            //     xhr.open('HEAD', urlToFile, false);
+            //     xhr.send();
+                
+            //     if (xhr.status == "404") {
+            //         return false;
+            //         // alert("gagal");
+            //     } else {
+            //         return true;
+            //     }
+            // }
+
+            // function AudioExist(url) {
+            //   var aud = new Audio();
+            //   aud.src = url;
+            //   return aud.duration != 0;
+            // }
+
+            function start(){
+              var x = document.getElementById("bg");
+              x.setAttribute("src", "{{ url_for('video_feed') }}");
+            }
+
+            function stop() {
+              var x = document.getElementById("bg");
+              x.setAttribute("src", "{{url_for('static',filename= 'img/prepcam.jpg')}}");
+            }
+
+            function playsound(){
+              const audio = new Audio()
+              audio.src = "{{url_for('static',filename= 'output.mp3')}}"
+              if(audio.duration != 0){
+                console.log("berhasil")
+                audio.play()
+                // alert("masuk");
+              }else{
+                console.log("gagal")
+              }
+            }
+        
+        </script>
+    
+
+    </body>
+</html>
